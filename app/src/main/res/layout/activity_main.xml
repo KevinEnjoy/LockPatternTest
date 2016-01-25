@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.demo.lockpatterntest.MainActivity">
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnCreatePasswd"
+        android:text="创建图案" />
+
+    <Button
+        android:id="@+id/btn_compare_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnCompare"
+        android:text="自动验证密码锁" />
+    <Button
+        android:id="@+id/btn_compare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnCompare"
+        android:text="验证密码锁" />
+    <Button
+        android:id="@+id/btn_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnVerificationPasswd"
+        android:text="生成随机的图案" />
+</LinearLayout>
